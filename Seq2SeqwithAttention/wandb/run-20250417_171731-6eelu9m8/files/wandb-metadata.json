@@ -1,0 +1,42 @@
+{
+  "os": "macOS-15.1.1-arm64-arm-64bit",
+  "python": "CPython 3.12.4",
+  "startedAt": "2025-04-17T16:17:31.064607Z",
+  "program": "<python with no main file>",
+  "git": {
+    "remote": "https://github.com/dummy1cx/dummy1cx.git",
+    "commit": "7bc38489302f74b1723a9b3c95b43a745814fe0f"
+  },
+  "email": "dummy1cx@gmail.com",
+  "root": "/Users/abhishekdas/Desktop/Encoder_decoder/Seq2Seq",
+  "host": "Abhisheks-MacBook-Air.local",
+  "executable": "/opt/anaconda3/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "177551454208"
+    },
+    "/System/Volumes/Data": {
+      "total": "245107195904",
+      "used": "177551454208"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M1",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 7,
+    "memoryGb": 8,
+    "swapTotalBytes": "4294967296",
+    "ramTotalBytes": "8589934592"
+  }
+}
