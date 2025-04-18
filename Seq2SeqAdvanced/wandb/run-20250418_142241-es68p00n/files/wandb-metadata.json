@@ -1,0 +1,44 @@
+{
+  "os": "macOS-15.1.1-arm64-arm-64bit",
+  "python": "CPython 3.12.4",
+  "startedAt": "2025-04-18T13:22:41.280145Z",
+  "program": "/Users/abhishekdas/Desktop/Encoder_decoder/inference.ipynb",
+  "codePath": "Desktop/Encoder_decoder/inference.ipynb",
+  "git": {
+    "remote": "https://github.com/dummy1cx/dummy1cx.git",
+    "commit": "7bc38489302f74b1723a9b3c95b43a745814fe0f"
+  },
+  "email": "dummy1cx@gmail.com",
+  "root": "/Users/abhishekdas/Desktop/Encoder_decoder",
+  "host": "Abhisheks-MacBook-Air.local",
+  "executable": "/opt/anaconda3/bin/python",
+  "codePathLocal": "inference.ipynb",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "182389833728"
+    },
+    "/System/Volumes/Data": {
+      "total": "245107195904",
+      "used": "182389833728"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M1",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 7,
+    "memoryGb": 8,
+    "swapTotalBytes": "3221225472",
+    "ramTotalBytes": "8589934592"
+  }
+}

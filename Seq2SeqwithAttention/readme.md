@@ -14,33 +14,61 @@ Here are some sample conversation with the model where the model was asked vario
 
 Hello! Financeot is ready to solve your query! Type 'quit' to exit.
 > Why do some stocks have a higher margin requirement?
+
 Bot: some you can have a successful mobile of parts a test that can help you as much as possible . .
+-
 > why do I need an emergency fund if I already have investments?
+
 Bot: i believe you believe and what you have that can have you been . it is always good to have have you to have . .
+-
 > How would bonds fare if interest rates rose?
+
 Bot: there are three players you need to take a few steps . .
+-
 > Simple and safe way to manage a lot of cash
+
 Bot: . what are the of you are ? .
+-
 > Personal Tax Return software for Linux?
+
 Bot: the criteria for you for is as follows as of and and and and . and .
+-
 > Is it possible to make money by getting a mortgage?
+
 Bot: it is not a common step to make it easy to pay . you are here to you pay about your money . you you you .
+-
 > Is it ever a good idea to close credit cards?
+
 Bot: it is not a good step but you need to buy your budget but you can give it up . . you
+-
 > Do I not have a credit score?
+
 Bot: i have not a few few but not not not . it does not have been very few . not not not . not .
+-
 > What can cause rent prices to fall?
+
 Bot: . have a comprehensive type of reasons to the task or open a few situation . . . .
+-
 > What is a good asset allocation for a 25 year old?
+
 Bot: . old to old old year old year . year year .
+-
 > Summarize the functions of the Federal Reserve.
+
 Bot: the main of is a .
+-
 > Create a container class that holds two values.
+
 Bot: class blue two two two two two two two ? two . a .
+-
 > Write a short poem describing a setting sun.
+
 Bot: the sun sun sun
+-
 > Generate a comment on a science article.
+
 Bot: the science of the science science the science . science . .
+-
 > quit
 
 #######################################################################################
