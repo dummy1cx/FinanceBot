@@ -2,7 +2,7 @@
 
 
 
-Sample Question Answer from the FinanceBot
+Sample Question Answer from the FinanceBot .
 ---------------------------------------------------------------------------------------
 FinanceBot is ready! Ask me anything. Type 'quit' to exit.
 
