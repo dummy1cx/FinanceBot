@@ -2,6 +2,8 @@ import pandas as pd
 import torch
 import  re
 import numpy as np
+from torch.utils.data import TensorDataset, DataLoader
+
 from tokenizer import Vectorization
 
 
@@ -64,6 +66,30 @@ class datasetLoader():
 
        print("Size of the source vocabulary :", len(src_tokenizer.word_index))
        print("Size of the target vocabulary :", len(trg_tokenizer.word_index))
+
+       # Verify sequence tokenized
+       trg_sent = ' '.join([trg_tokenizer.index_word[idx] for idx in trg_sequences[6] if idx != 0])
+       print(f"{trg_sequences[6]} \n\n {trg_sent}")
+
+       return src_sequences, trg_sequences
+
+   def  define_dataloader(self):
+       batch_size = 128
+
+       src_sequences, trg_sequences = self.treatment()
+
+       dataset = TensorDataset(torch.LongTensor(src_sequences), torch.LongTensor(
+           trg_sequences))
+
+       torch.manual_seed(42)
+
+       dataframe_dataloader = DataLoader(
+           dataset=dataset,
+           batch_size=batch_size,
+           shuffle=True,
+           num_workers=4,
+           pin_memory=True
+       )
 
 
 
