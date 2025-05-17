@@ -31,8 +31,8 @@ class Tokenizer:
             sequences.append(sequence)
         return sequences
 
-def Vectorization(column, max_sequence_length):
-    global df  # assumes 'df' is a global variable
+def Vectorization(df,column, max_sequence_length):
+   # assumes 'df' is a global variable
 
     sentences = df[column].tolist()
 

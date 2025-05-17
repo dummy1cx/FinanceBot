@@ -19,7 +19,7 @@ class datasetLoader():
 
    def read_json(self):
        # Convert to DataFrame
-       data = pd.DataFrame(pd.read_json('./Data/Cleaned_date.json'))
+       data = pd.DataFrame(pd.read_json(self.path))
        df_cleaned = (data)
 
        # Drop 'input' and 'text' columns
@@ -65,8 +65,8 @@ class datasetLoader():
        src_max_lenght_sentence = np.max(df['src_len'])
        trg_max_lenght_sentence = np.max(df['trg_len'])
 
-       src_sequences, src_tokenizer = Vectorization('instruction', src_max_lenght_sentence)
-       trg_sequences, trg_tokenizer = Vectorization('output', trg_max_lenght_sentence)
+       src_sequences, src_tokenizer = Vectorization(df,'instruction', src_max_lenght_sentence)
+       trg_sequences, trg_tokenizer = Vectorization(df,'output', trg_max_lenght_sentence)
 
        print("Size of the source vocabulary :", len(src_tokenizer.word_index))
        print("Size of the target vocabulary :", len(trg_tokenizer.word_index))
