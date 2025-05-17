@@ -16,6 +16,7 @@ class Transformer(nn.Module) :
         self.fc_out = nn.Linear(model_dimension , trg_vocab_size)
 
     def define_mask(self , seq) :
+
         # Ensure that padding tokens are ignored and that future tokens are not visible during training for the target sequence.
 
         sequence_mask = (seq == 0).float().unsqueeze(1).unsqueeze(2)

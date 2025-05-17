@@ -15,8 +15,7 @@ print(f"Using {DEVICE} device")
 class datasetLoader():
 
    def __init__(self,path):
-        self
-
+       self.path = path
 
    def read_json(self):
        # Convert to DataFrame
@@ -58,6 +57,11 @@ class datasetLoader():
        df = self.dialog_treatment(df, 'instruction')
        df = self.answer_treatment(df, 'output')
 
+       return df
+
+
+   def vectorization(self):
+       df = self.treatment()
        src_max_lenght_sentence = np.max(df['src_len'])
        trg_max_lenght_sentence = np.max(df['trg_len'])
 
@@ -71,12 +75,14 @@ class datasetLoader():
        trg_sent = ' '.join([trg_tokenizer.index_word[idx] for idx in trg_sequences[6] if idx != 0])
        print(f"{trg_sequences[6]} \n\n {trg_sent}")
 
-       return src_sequences, trg_sequences
+       return src_sequences, trg_sequences, src_tokenizer, trg_tokenizer
 
    def  define_dataloader(self):
+       df = self.treatment()
+
        batch_size = 128
 
-       src_sequences, trg_sequences = self.treatment()
+       src_sequences, trg_sequences, src_tokenizer, trg_tokenizer = self.vectorization()
 
        dataset = TensorDataset(torch.LongTensor(src_sequences), torch.LongTensor(
            trg_sequences))
@@ -90,6 +96,14 @@ class datasetLoader():
            num_workers=4,
            pin_memory=True
        )
+       src_vocab_size = len(src_tokenizer.word_index)  # Vocabulary size for source
+       trg_vocab_size = len(trg_tokenizer.word_index)  # Vocabulary size for target
+       src_max_len = np.max(df['src_len'])
+       trg_max_len = np.max(df['trg_len'])
+
+       return dataframe_dataloader, src_vocab_size, trg_vocab_size,src_max_len,trg_max_len,src_tokenizer,trg_tokenizer
+
+
 
 
 
