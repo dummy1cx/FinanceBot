@@ -20,4 +20,4 @@ export USE_WANDB=true
 echo "  Entity:   $WANDB_ENTITY"
 echo "  Project:  $WANDB_PROJECT"
 
-"
+
