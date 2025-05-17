@@ -1,0 +1,44 @@
+{
+  "os": "macOS-15.1.1-arm64-arm-64bit",
+  "python": "CPython 3.9.6",
+  "startedAt": "2025-05-17T10:30:02.707424Z",
+  "program": "/Users/lorraynereis/Documents/msc-documents/MSc in Artificial Intelligence/Deep Learning for Image Analysis/FinanceBot/TransformersMultiHeadAttention/train.py",
+  "codePath": "TransformersMultiHeadAttention/train.py",
+  "git": {
+    "remote": "https://github.com/dummy1cx/FinanceBot.git",
+    "commit": "b97e84767d4132c345c43dbb55656d9f8f09a028"
+  },
+  "email": "loohsilva995@gmail.com",
+  "root": "/Users/lorraynereis/Documents/msc-documents/MSc in Artificial Intelligence/Deep Learning for Image Analysis/FinanceBot/TransformersMultiHeadAttention",
+  "host": "MacBookPro.cust.communityfibre.co.uk",
+  "executable": "/Users/lorraynereis/Documents/msc-documents/MSc in Artificial Intelligence/Deep Learning for Image Analysis/FinanceBot/.venv/bin/python",
+  "codePathLocal": "train.py",
+  "cpu_count": 10,
+  "cpu_count_logical": 10,
+  "disk": {
+    "/": {
+      "total": "494384795648",
+      "used": "197046165504"
+    },
+    "/System/Volumes/Data": {
+      "total": "494384795648",
+      "used": "197046165504"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 10
+  },
+  "apple": {
+    "name": "Apple M1 Pro",
+    "ecpuCores": 2,
+    "pcpuCores": 8,
+    "gpuCores": 16,
+    "memoryGb": 16,
+    "swapTotalBytes": "7516192768",
+    "ramTotalBytes": "17179869184"
+  }
+}

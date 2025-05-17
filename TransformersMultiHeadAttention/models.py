@@ -4,7 +4,7 @@ import torch
 DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
 print(f"Using {DEVICE} device")
 
-class SelfAttention:
+class SelfAttention():
     def Self_Attention(q, k, v, mask):
         attention_scores = torch.matmul(q, k.transpose(-2, -1)).to(DEVICE)  # Matrix multiplication
 

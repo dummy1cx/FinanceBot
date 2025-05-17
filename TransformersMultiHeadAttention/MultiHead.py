@@ -33,7 +33,7 @@ class MultiHeadAttention(nn.Module) :
         v_transform = self.split_heads(self.V(v),batch_size)
 
         # Perform scaled dot-product attention
-        self_attention = SelfAttention(q_transform , k_transform , v_transform , mask)
+        self_attention = SelfAttention.Self_Attention(q_transform , k_transform , v_transform , mask)
 
         # Rearrange shape
         self_attention =  self_attention.permute(0 , 2 , 1 , 3)
