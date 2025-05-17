@@ -80,8 +80,7 @@ if __name__ == "__main__":
     train_dataloader = DataLoader(train_dataset, batch_size=32, shuffle=True)
     val_dataloader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 
-    # Start a new wandb run to track this script.
-    run = init_wandb()
+
 
     train_losses = []
     val_losses = []
@@ -130,11 +129,3 @@ if __name__ == "__main__":
                   f"[Train Loss: {train_losses[-1]:0.2f}] "
                   f"[Train Perplexity: {train_perplexity:0.2f}] \n")
 
-            # Log to WandB
-            wandb.log({
-                "epoch": epoch + 1,
-                "train_loss": train_losses[-1],
-                "train_perplexity": train_perplexity
-            })
-
-    run.finish()
