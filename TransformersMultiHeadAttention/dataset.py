@@ -4,10 +4,8 @@ import  re
 import numpy as np
 from torch.utils.data import TensorDataset, DataLoader
 
-from tokenizer import Vectorization
+from TransformersMultiHeadAttention.tokenizer import Vectorization
 import pandas as pd
-
-
 
 # Define device at the top
 DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
