@@ -3,8 +3,12 @@ from torch import nn
 from encoder import Encoder
 from decoder import Decoder
 
+# Define device at the top
+DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+print(f"Using {DEVICE} device")
+
 class Transformer(nn.Module) :
-    def __init__(self,num_layers,embedding_dim,num_heads,inner_layer_dimension,src_vocab_size,trg_vocab_size,src_max_length,trg_max_length ,dropout_rate = 0.1) :
+    def __init__(self,num_layers,model_dimension,num_heads,inner_layer_dimension,src_vocab_size,trg_vocab_size,src_max_length,trg_max_length ,dropout_rate = 0.1) :
 
         super(Transformer , self).__init__()
 

@@ -40,9 +40,9 @@ def train_step(src , trg) :
 
 
 if __name__ == "__main__":
-    path = "data/my_dataset.csv"
+    path = "./Cleaned_date.json"
     loader = datasetLoader(path)
-    dataframe_dataloader, src_vocab_size, trg_vocab_size, src_max_len, trg_max_len, src_tokenizer, src_tokenizer = datasetLoader.define_dataloader()
+    dataframe_dataloader, src_vocab_size, trg_vocab_size, src_max_len, trg_max_len, src_tokenizer, src_tokenizer = loader.define_dataloader()
 
     epochs = 80
     lr = 5e-4
