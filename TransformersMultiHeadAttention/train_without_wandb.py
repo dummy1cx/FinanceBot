@@ -129,3 +129,15 @@ if __name__ == "__main__":
                   f"[Train Loss: {train_losses[-1]:0.2f}] "
                   f"[Train Perplexity: {train_perplexity:0.2f}] \n")
 
+        checkpoint = {
+            'epoch': epoch + 1,
+            'model_state_dict': model.state_dict(),
+            'train_loss': avg_train_loss,  # Use the average train loss
+            'train_perplexity': train_perplexity,
+        }
+        torch.save(checkpoint, f"checkpoint_epoch_{epoch + 1}.pt")
+
+    model_save_path = "./transformer_model_MHA.pt"
+    torch.save(model.state_dict(), model_save_path)
+    print(f"Model saved to {model_save_path}")
+
