@@ -14,7 +14,7 @@ pip freeze > requirements.txt
 echo "Setup"
 
 export WANDB_ENTITY=
-export WANDB_PROJECT=
+export WANDB_PROJECT="transformers_encoder_decoder_8"
 export USE_WANDB=true
 
 echo "  Entity:   $WANDB_ENTITY"

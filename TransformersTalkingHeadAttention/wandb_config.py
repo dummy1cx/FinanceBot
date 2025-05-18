@@ -10,7 +10,7 @@ def init_wandb(project_name="transformers_encoder_decoder_talking_head_90"):
             "dataset": "investment_dataset",
             "batch_size": 128,
             "epochs": 80,
-            "learning_rate": 5e-4,
+            "learning_rate": 1e-4,
             "optimizer": "Adam",
             "loss_function": "CrossEntropy",
             "dropout_rate": 0.1

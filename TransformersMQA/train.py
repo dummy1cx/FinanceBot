@@ -48,7 +48,7 @@ if __name__ == "__main__":
     loader = datasetLoader(path)
     dataframe_dataloader, src_vocab_size, trg_vocab_size, src_max_len, trg_max_len, src_tokenizer, src_tokenizer = loader.define_dataloader()
 
-    epochs = 30
+    epochs = 15
     lr = 1e-3  # Learning rate
     model_dimension = 256
     inner_layer_dimension = 512

@@ -47,7 +47,7 @@ if __name__ == "__main__":
     dataframe_dataloader, src_vocab_size, trg_vocab_size, src_max_len, trg_max_len, src_tokenizer, src_tokenizer = loader.define_dataloader()
 
     epochs = 80
-    lr = 5e-4
+    lr = 1e-4
     model_dimension = 256
     inner_layer_dimension = 512
     num_layers = 4
