@@ -1,18 +1,4 @@
-# FinanceBot
-A chatbot trained on Finance Dataset using architecture like Encoder Decoder with Luong Attention mechanism and transformers with multi head attention mechanism.
+A chatbot trained on Finance Dataset using Talking Head in transformers.
 
-# Resources
+All the codes used were based on the suggested implementation by the original book "Attention is all you need",Talking-heads attention,LAB files from Deep Learning for Sequence Analysis and https://www.datacamp.com/tutorial/building-a-transformer-with-py-torch
 
-# Architecture
-
-# Encoder - Decoder with Luong Attention
-
-# Transformers
-
-# Weights n Biases WandB
-
-# Result Comparison
-
-# Further Improvements
-
-# Conclusion
